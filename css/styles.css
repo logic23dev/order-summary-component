@@ -16,22 +16,161 @@
 
 body {
   min-height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+  background: var(--pale-blue) url('/images/pattern-background-desktop.svg')
+    repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img,
-picture,
-video,
-canvas,
 svg {
   max-width: 100%;
   display: block;
 }
 
-input,
-button,
-optgroup,
-textarea,
-select {
+.card {
+  max-width: 28.125rem;
+  background-color: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 10%);
+}
+
+.card-body {
+  padding: 2.8125rem 2.8125rem 1.875rem;
+}
+
+.card-heading {
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: 0.9375rem;
+}
+
+.card-text {
+  font-size: 1.0625rem;
+  text-align: center;
+  font-weight: 400;
+  color: var(--desaturated-blue);
+  line-height: 1.6;
+  margin-bottom: 1.0625rem;
+}
+
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5625rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.card-box a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+  transition-duration: 0.2s;
+}
+
+.card-box a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.card-pricing {
+  display: flex;
+}
+
+.annual-plan {
+  margin-left: 1rem;
+}
+
+.annual-plan h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  margin-bottom: 0.3125rem;
+}
+
+.annual-plan p {
+  color: var(--desaturated-blue);
+  font-size: 1.0625rem;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  border: none;
+  width: 100%;
+}
+
+.button-proceed {
+  background-color: var(--bright-blue);
+  color: white;
+  margin-bottom: 1.25rem;
+  box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 20%);
+  transition-duration: 0.2s;
+}
+
+.button-proceed:hover {
+  opacity: 0.7;
+}
+
+.button-cancel {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  transition-duration: 0.2s;
+}
+
+.button-cancel:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: var(--pale-blue) url('/images/pattern-background-mobile.svg')
+      repeat-x;
+    background-size: contain;
+  }
+
+  .card {
+    max-width: 20rem;
+  }
+
+  .card-body {
+    padding: 1.625rem 1.625rem 0.9375rem;
+  }
+
+  .card-heading {
+    font-size: 1.375rem;
+  }
+
+  .card-text {
+    font-size: 0.9375rem;
+  }
+
+  .card-box {
+    padding: 0.9375rem;
+  }
+
+  .annual-plan h2 {
+    font-size: 0.875rem;
+  }
+
+  .annual-plan p {
+    font-size: 0.875rem;
+  }
+
+  .card-box a {
+    font-size: 0.8125rem;
+  }
 }
