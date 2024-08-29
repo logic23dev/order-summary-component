@@ -5,7 +5,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [Click here!](https://github.com/logic23dev/order-summary-component)
-- Live Site URL: [Click here!]()
+- Live Site URL: [Click here!](https://logic23dev.github.io/order-summary-component/)
 
 ### Built with
 
@@ -13,6 +13,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - CSS custom properties
 - CSS variables
 - Flexbox
+- CSS Media Queries
 
 ### Author
 
